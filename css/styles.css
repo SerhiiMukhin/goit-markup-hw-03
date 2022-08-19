@@ -1,0 +1,266 @@
+/* colors */
+
+:root {
+	/* Colors */
+	--primary-background-color: #ffffff;
+	--secondary-background-color: #2f303a;
+	--tertiary-background-color: #f5f4fa;
+	--accent-color: #2196f3;
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--tertiary-text-color: #ffffff;
+	--secondary-text-color-transparency: rgba(255, 255, 255, 0.6);
+	--logo-color: #000000;
+	--cards-border-color: #eeeeee;
+	--unknown-color: #ececec;
+}
+
+
+/* global */
+
+body {
+	font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+	background-color: var(--primary-background-color);
+}
+
+/* index */
+
+/* main */
+
+/* header */
+
+/* logo */
+
+.logo {
+	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--logo-color);
+}
+
+.logo-accent {
+	color: var(--accent-color);
+}
+
+/* nav */
+
+.nav-list {
+	list-style: none;
+}
+
+.nav {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.nav .link {
+	text-decoration: none;
+}
+
+.nav .link {
+	color: var(--primary-text-color);
+}
+
+.nav .link-current {
+	text-decoration: none;
+	color: var(--accent-color);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+	color: var(--accent-color);
+}
+
+/* contacts */
+
+.contacts {
+	list-style: none;
+}
+
+.contacts .link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: var(--secondary-text-color);
+}
+
+.contacts .link:visited {
+	color: var(--secondary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+	color: var(--accent-color);
+}
+
+/* solutions */
+
+.section-hero {
+	background-color: var(--secondary-background-color);
+}
+
+.section-hero .title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--tertiary-text-color);
+}
+
+.section-hero .button {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--tertiary-text-color);
+	background-color: var(--accent-color);
+	cursor: pointer;
+}
+
+/* benefits */
+
+.benefits-list {
+	list-style: none;
+}
+
+.benefits .title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.benefits .text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+}
+
+/* work */
+
+.work-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.work-list {
+	list-style: none;
+}
+
+/* team */
+
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.team-list {
+	list-style: none;
+}
+
+.team .title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.team .text {
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+}
+
+/* footer */
+
+.footer {
+	background-color: var(--secondary-background-color);
+}
+
+.footer .logo {
+	color: var(--tertiary-text-color);
+}
+
+.footer .location {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--tertiary-text-color);
+}
+
+.footer-contacts {
+	list-style: none;
+}
+
+.footer .link {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color-transparency);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+	color: var(--accent-color);
+}
+
+/* portfolio */
+
+.filter-list {
+	list-style: none;
+}
+
+.filter-list .button {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+	color: var(--tertiary-text-color);
+	background-color: var(--accent-color);
+	cursor: pointer;
+}
+
+.portfolio-list {
+	list-style: none;
+}
+
+.portfolio .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+}
