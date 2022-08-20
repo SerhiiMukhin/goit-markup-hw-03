@@ -339,17 +339,31 @@ body {
 
 /* portfolio */
 
+.portfolio {
+
+}
+
 .filter-list {
+  display: flex;
   list-style: none;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-list .button {
+  background-color: var(--tertiary-background-color);
+  padding: 6px 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.filter-list-button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list .button:hover,
@@ -359,11 +373,30 @@ body {
   cursor: pointer;
 }
 
+.portfolio-title {
+margin-top: 0px;
+margin-bottom: 0px;
+text-align: center;
+}
+
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
+.portfolio-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+.portfolio-list-item:nth-child(3n+0) {
+  margin-right: 0px;
+}
+
 .portfolio .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -371,6 +404,8 @@ body {
 }
 
 .portfolio .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
