@@ -18,19 +18,17 @@
     <title>Портфоліо</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <a class="logo" href="./index.html"> <span class="logo-accent">Web</span>Studio</a>
+          <header class="header">
+      <div class="container">
+        <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav-list list">
-            <li class="nav-list-item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="link link-current">Портфоліо</a>
-            </li>
-            <li class="nav-list-item"><a href="" class="link">Контакти</a></li>
+            <li class="nav-list-item"><a class="link" href="./index.html">Студія</a></li>
+            <li class="nav-list-item"><a class="link link-current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-list-item"><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts-list list">
           <li class="contacts-list-item">
             <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -38,10 +36,12 @@
             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </header>
+    </div>
+    </header>
       <main>
         <section class="portfolio">
-          <h1 class="portfolio-title">Портфоліо</h1>
+          <div class="container">
+            <h1 class="portfolio-title">Портфоліо</h1>
           <ul class="filter-list list">
             <li class="filter-list-button">
               <button class="button" type="button">Веб-сайти</button>
@@ -117,10 +117,12 @@
               <p class="text">Додаток</p>
             </li>
           </ul>
+          </div>
         </section>
       </main>
       <footer class="footer">
-        <a class="logo" href="./index.html">
+        <div class="container">
+          <a class="logo" href="./index.html">
           <span class="logo-accent">Web</span>
           Studio
         </a>

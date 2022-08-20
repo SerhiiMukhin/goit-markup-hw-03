@@ -26,7 +26,7 @@
 
 body {
   font-family: 'Roboto', 'Arial', 'Tahoma', sans-serif;
-  letter-spacing: 0.03em;
+  font-size: 14px;
   width: 1600px;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
@@ -46,20 +46,24 @@ body {
 
 .header {
 	font-weight: 500;
-  outline: solid var(--logo-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 /* logo */
 
 .logo {
-  outline: solid var(--logo-color);
-
-  display: inline-block;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: calc(31/26);
   color: var(--logo-color);
 }
 
@@ -70,22 +74,28 @@ body {
 /* nav */
 
 .nav {
-  outline: solid blue;
-  display: inline-block;
 }
 
 .nav-list {
-  outline: solid red;
+  display: flex;
+  margin-left: 93px;
 }
 
 .nav-list-item {
-  display: inline-block;
-  outline: solid orange;
+}
+
+
+.nav-list-item:not(:last-child), .contacts-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav .link {
-  outline: solid green;
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
   text-decoration: none;
+  line-height: calc(16/14);
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -101,35 +111,34 @@ body {
 
 /* contacts */
 
-.contacts {
-  outline: solid var(--secondary-text-color);
-  display: inline-block;
+.contacts-list {
+  display: flex;
+  margin-left: auto;
 }
 
 .contacts-list-item {
-  outline: solid var(--accent-color);
-
-  display: inline-block;
 }
 
-.contacts .link {
-  font-size: 14px;
-  line-height: 1.14;
+.contacts-list .link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-text-color);
 }
 
-.contacts .link:visited {
+.contacts-list .link:visited {
   color: var(--secondary-text-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-list .link:hover,
+.contacts-list .link:focus {
   color: var(--accent-color);
 }
 
-/* solutions */
+/* hero */
 
 .section-hero {
   background-color: var(--secondary-background-color);
@@ -137,6 +146,7 @@ body {
 }
 
 .section-hero .title {
+  margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -188,6 +198,14 @@ body {
 }
 
 .work-list {
+  display: flex;
+}
+
+.img-no-gap {
+  display: block;
+}
+
+.work-list-item {
 }
 
 /* team */
