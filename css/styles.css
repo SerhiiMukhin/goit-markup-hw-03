@@ -405,7 +405,7 @@ body {
 .portfolio.list .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100%-60px) / 3);
+  width: 370px;
 }
 .portfolio.list .item:nth-child(3n) {
   margin-right: 0px;
