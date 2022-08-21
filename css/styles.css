@@ -409,7 +409,7 @@ body {
 }
 
 .portfolio-card {
-  /* width: inherit; */
+  width: inherit;
   padding: 20px 24px;
   border: 1px solid var(--cards-border-color);
 }
