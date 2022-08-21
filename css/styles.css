@@ -13,6 +13,7 @@
   --logo-color: #000000;
   --cards-border-color: #eeeeee;
   --header-border-bottom: #ececec;
+  --active-button: #188CE8;
 }
 
 /* global */
@@ -45,6 +46,16 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* index */
@@ -141,6 +152,8 @@ body {
 /* hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-background-color);
   text-align: center;
 }
@@ -150,11 +163,10 @@ body {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -174,60 +186,71 @@ body {
   cursor: pointer;
 }
 
-/* benefits */
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--active-button);
+}
 
-.benefits {
+/* features */
+
+.features {
   padding-bottom: 0px;
 }
 
-.benefits-title {
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: transparent;
+.features.title {
+/* hidden */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.benefits-list {
+.features .list {
   display: flex;
 }
 
-.benefits-list .benefits-list-item:not(:last-child) {
+.features .item {
+    width: calc((100% - 90px) / 4);
+    max-width: 270px;
+}
+
+.features .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits .title {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.features .title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.benefits .text {
-  width: 270px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 14px;
-  line-height: 1.71;
+.features .text {
+  margin-top: 10px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /* work */
 
-.work-title {
-  margin-top: 0px;
+.work.title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.work-list {
+.work .list {
   display: flex;
 }
 
@@ -235,7 +258,7 @@ body {
   display: block;
 }
 
-.work-list-item:not(:last-child) {
+.work .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -246,44 +269,42 @@ body {
 }
 
 .team-title {
-  margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.team-list {
+.team .list {
   display: flex;
 }
 
-.team-list-item {
+.team .item {
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list-item:not(:last-child) {
+.team .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .team .title {
-  margin-top: 30;
-  margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team .text {
-  margin-top: 10;
-  margin-bottom: 30;
-  line-height: 1.19;
+  margin-bottom: 30px;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -298,8 +319,9 @@ body {
 }
 
 .footer .logo {
+  display: block;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: var(--tertiary-text-color);
 }
 
@@ -307,21 +329,18 @@ body {
   margin-top: 0px;
   margin-bottom: 9px;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
 }
 
-.footer-contacts-item:not(:last-child) {
+.footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .footer .link {
-  text-decoration: none;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-transparency);
 }
@@ -332,10 +351,6 @@ body {
 }
 
 /* portfolio */
-
-.portfolio {
-
-}
 
 .filter-list {
   display: flex;
