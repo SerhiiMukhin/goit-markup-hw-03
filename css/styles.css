@@ -20,7 +20,6 @@
 body {
   font-family: 'Roboto', 'Arial', 'Tahoma', sans-serif;
   font-size: 14px;
-  width: 1600px;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
@@ -78,8 +77,9 @@ p {
 /* logo */
 
 .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -96,12 +96,9 @@ p {
 
 .nav .list {
   display: flex;
-  margin-left: 93px;
 }
 
 .nav .item {
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .nav .item:not(:last-child) {
@@ -109,6 +106,8 @@ p {
 }
 
 .nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -131,8 +130,6 @@ p {
 }
 
 .contacts .item {
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .contacts .item:not(:last-child) {
@@ -140,6 +137,8 @@ p {
 }
 
 .contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -318,12 +317,15 @@ p {
   display: block;
   margin-top: 0px;
   margin-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: var(--tertiary-text-color);
 }
 
 .footer .location {
   margin-top: 0px;
   margin-bottom: 9px;
+  text-decoration: none;
   font-style: normal;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
